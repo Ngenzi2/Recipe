@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useGetRecipesQuery } from "@/services/recipesApi";
 import { RecipeCard } from "@/components/common/RecipeCard";
 
-
-
 export function RecipesPage() {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
@@ -49,15 +47,17 @@ export function RecipesPage() {
         {/* Search and Filter Section */}
         <div style={filterSectionStyles}>
           <div style={searchContainerStyles}>
+            <label style={labelStyles}>Search by Recipe Name</label>
             <input
               type="text"
-              placeholder="Search recipes..."
+              placeholder="e.g., Pasta, Pizza, Salad..."
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);
                 setSkip(0);
               }}
               style={searchInputStyles}
+              aria-label="Search recipes by name"
             />
           </div>
 
@@ -225,4 +225,12 @@ const paginationButtonStyles: React.CSSProperties = {
 const pageInfoStyles: React.CSSProperties = {
   fontWeight: "bold",
   color: "#333",
+};
+
+const labelStyles: React.CSSProperties = {
+  display: "block",
+  marginBottom: "0.5rem",
+  fontWeight: "bold",
+  color: "#333",
+  fontSize: "0.95rem",
 };
