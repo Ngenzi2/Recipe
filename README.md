@@ -211,7 +211,7 @@ Test the app with these demo credentials:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Port Already in Use
 
@@ -227,19 +227,19 @@ Try refreshing the page or checking browser console for API errors.
 
 ---
 
-## 📧 Support
+##  Support
 
 For issues or questions, please create an issue in the repository.
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [DummyJSON](https://dummyjson.com/) for the mock API
 - [React](https://react.dev/) team for the amazing framework
