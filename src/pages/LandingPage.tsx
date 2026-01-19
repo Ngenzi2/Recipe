@@ -56,21 +56,7 @@ export function LandingPage(){
         </div>
       </section>
 
-      {/* Info Section */}
-      <section style={infoSectionStyles}>
-        <div style={infoColumnStyles}>
-          <h3>🔍 Search & Filter</h3>
-          <p>Find recipes by name, cuisine, or difficulty level</p>
-        </div>
-        <div style={infoColumnStyles}>
-          <h3>⭐ Rate & Review</h3>
-          <p>Read ratings and reviews from other users</p>
-        </div>
-        <div style={infoColumnStyles}>
-          <h3>📝 Create & Share</h3>
-          <p>Share your own recipes with the community</p>
-        </div>
-      </section>
+      
     </div>
   );
 }
@@ -152,17 +138,6 @@ const secondaryButtonStyles: React.CSSProperties = {
   transition: "all 0.3s ease",
 };
 
-const infoSectionStyles: React.CSSProperties = {
-  backgroundColor: "#f8f9fa",
-  padding: "4rem 1rem",
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-  gap: "2rem",
-  maxWidth: "1200px",
-  margin: "0 auto",
-};
 
-const infoColumnStyles: React.CSSProperties = {
-  textAlign: "center",
-  color: "#333",
-};
+
+
